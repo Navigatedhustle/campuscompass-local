@@ -1,0 +1,17 @@
+[Unit]
+Description=CampusCompass Local embedding (synthetic demonstration)
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Projects/campuscompass-local
+ExecStart=/bin/bash %h/Projects/campuscompass-local/scripts/embedding-start.sh
+Environment=LD_PRELOAD=%h/Projects/campuscompass-local/runtime/egress-guard.so
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+UMask=0077
+
+[Install]
+WantedBy=default.target

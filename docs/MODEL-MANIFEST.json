@@ -1,0 +1,76 @@
+{
+  "generation": {
+    "repo": "unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "revision": "5bc3e238d916f48a861bac2f8a1990a0e9b7e98d",
+    "upstream_repo": "Qwen/Qwen3.6-35B-A3B",
+    "upstream_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "file": "models/generation/Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf",
+    "sha256": "55983c5a75a1ab969824077b3bb3de4146e82a9234072b48ad4e8f92ad3fe9f1",
+    "bytes": 22853663008,
+    "license": "Apache-2.0",
+    "port": 8081,
+    "context": 16384,
+    "parallel": 1,
+    "reasoning": false,
+    "speculation": false
+  },
+  "runtime": {
+    "repo": "https://github.com/ggml-org/llama.cpp",
+    "commit": "ad6c66839af3c5646fba8c6c2e2087a1e4e38948",
+    "build": 10950,
+    "cuda": "13.0.88",
+    "architecture": "121a-real",
+    "compiler": "GNU 13.3.0",
+    "command": "bash scripts/model-start.sh",
+    "binary_sha256": "a6cd4bcde87e55d82911a05d2231079733f7bc45fb21430a1f8803976529ed36",
+    "flags": [
+      "-DGGML_NATIVE=ON",
+      "-DGGML_CUDA=ON",
+      "-DCMAKE_CUDA_ARCHITECTURES=121a-real",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DLLAMA_CURL=OFF"
+    ],
+    "license": "MIT",
+    "launch_scripts": {
+      "scripts/reranker-start.sh": "e1a2bccfc5061c29b198fb06bbe2b748ece5084d2dcd97bc775c6ab86ee6247e",
+      "scripts/model-start.sh": "17dc03218ef2701c1e6c4283d7747d3029aa8f339dbccd61df439930574080a2",
+      "scripts/app-start.sh": "3b1852547c48c02244677bec14cf20109112cbb95c69066be5dec08df9773874",
+      "scripts/embedding-start.sh": "091e7158b664212f34bf0318415a05265e1cfeb5aa43613800b541b2ccb627dd"
+    },
+    "egress_guard": {
+      "file": "runtime/egress-guard.so",
+      "sha256": "5875cb086c11f34da3cc3704367079c946b51b4876721a1d2ceeff5c24d0ad08",
+      "scope": "Application-level libc loopback guard; not OS isolation"
+    }
+  },
+  "embedding": {
+    "repo": "Qwen/Qwen3-Embedding-0.6B-GGUF",
+    "revision": "370f27d7550e0def9b39c1f16d3fbaa13aa67728",
+    "file": "models/embedding/Qwen3-Embedding-0.6B-Q8_0.gguf",
+    "sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+    "license": "Apache-2.0",
+    "port": 8082,
+    "upstream_model_card_revision_checked": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimensions": 1024,
+    "pooling": "last",
+    "normalization": "L2"
+  },
+  "reranker": {
+    "repo": "Mungert/Qwen3-Reranker-0.6B-GGUF",
+    "revision": "041387f8ed7ead711b9496b153b682c5b2f5d158",
+    "file": "models/reranker/Qwen3-Reranker-0.6B-rank-q8_0.gguf",
+    "sha256": "a4df0373ece87ad7eeee42438538ceb636b69cd02aab921a03e9f1708951921d",
+    "license": "Apache-2.0",
+    "port": 8083,
+    "original_file": "models/reranker/Qwen3-Reranker-0.6B-q8_0.gguf",
+    "original_sha256": "8b5337e5baadf83fdd6f7a865dde4b3627fc53a1c8e56cc2f83260dfdd089c49",
+    "conversion": "scripts/repair-reranker-gguf.py; exact yes/no head extraction from quantized output, no training",
+    "token_ids": [
+      9693,
+      2152
+    ],
+    "upstream_model_card_revision_checked": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+    "pooling": "rank",
+    "template": "Qwen yes/no classification; pinned conversion/qwen.py"
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "synthetic": true,
+  "institution": "Mesa Vista University",
+  "scenario_date": "2027-02-15",
+  "student": {
+    "student_id": "MVU-DEMO-001",
+    "name": "Maya Chen",
+    "program": "BS Biology",
+    "catalog_year": "2023",
+    "expected_graduation": "May 2027",
+    "assigned_advisor_id": "ADV-01"
+  },
+  "course_attempts": [
+    {
+      "attempt_id": "MVU-001-T1-C1",
+      "term": "Fall 2023",
+      "course_code": "ENG101",
+      "title": "Academic Writing",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T1-C2",
+      "term": "Fall 2023",
+      "course_code": "MATH151",
+      "title": "Calculus I",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T1-C3",
+      "term": "Fall 2023",
+      "course_code": "BIO101",
+      "title": "Foundations of Biology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T1-C4",
+      "term": "Fall 2023",
+      "course_code": "CHEM101",
+      "title": "General Chemistry I",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T1-C5",
+      "term": "Fall 2023",
+      "course_code": "HIST110",
+      "title": "World History",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T2-C1",
+      "term": "Spring 2024",
+      "course_code": "ENG102",
+      "title": "Research Writing",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T2-C2",
+      "term": "Spring 2024",
+      "course_code": "STAT201",
+      "title": "Applied Statistics",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T2-C3",
+      "term": "Spring 2024",
+      "course_code": "BIO102",
+      "title": "Biological Systems",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T2-C4",
+      "term": "Spring 2024",
+      "course_code": "CHEM102",
+      "title": "General Chemistry II",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T2-C5",
+      "term": "Spring 2024",
+      "course_code": "COMM101",
+      "title": "Public Speaking",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T3-C1",
+      "term": "Fall 2024",
+      "course_code": "BIO210",
+      "title": "Cell Biology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T3-C2",
+      "term": "Fall 2024",
+      "course_code": "CHEM210",
+      "title": "Organic Chemistry I",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T3-C3",
+      "term": "Fall 2024",
+      "course_code": "PSY101",
+      "title": "Introduction to Psychology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T3-C4",
+      "term": "Fall 2024",
+      "course_code": "PHIL120",
+      "title": "Ethics",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T3-C5",
+      "term": "Fall 2024",
+      "course_code": "ART105",
+      "title": "Visual Culture",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T4-C1",
+      "term": "Spring 2025",
+      "course_code": "BIO220",
+      "title": "Genetics",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T4-C2",
+      "term": "Spring 2025",
+      "course_code": "CHEM220",
+      "title": "Organic Chemistry II",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T4-C3",
+      "term": "Spring 2025",
+      "course_code": "PHYS101",
+      "title": "General Physics I",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T4-C4",
+      "term": "Spring 2025",
+      "course_code": "SOC101",
+      "title": "Introduction to Sociology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T4-C5",
+      "term": "Spring 2025",
+      "course_code": "SPAN101",
+      "title": "Spanish I",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T5-C1",
+      "term": "Fall 2025",
+      "course_code": "BIO301",
+      "title": "Ecology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T5-C2",
+      "term": "Fall 2025",
+      "course_code": "BIO310",
+      "title": "Microbiology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T5-C3",
+      "term": "Fall 2025",
+      "course_code": "PHYS102",
+      "title": "General Physics II",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T5-C4",
+      "term": "Fall 2025",
+      "course_code": "CS110",
+      "title": "Scientific Computing",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T5-C5",
+      "term": "Fall 2025",
+      "course_code": "SPAN102",
+      "title": "Spanish II",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T6-C1",
+      "term": "Spring 2026",
+      "course_code": "BIO320",
+      "title": "Evolution",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T6-C2",
+      "term": "Spring 2026",
+      "course_code": "BIO325",
+      "title": "Plant Biology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T6-C3",
+      "term": "Spring 2026",
+      "course_code": "BIO335",
+      "title": "Animal Physiology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T6-C4",
+      "term": "Spring 2026",
+      "course_code": "ENV210",
+      "title": "Environmental Systems",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T6-C5",
+      "term": "Spring 2026",
+      "course_code": "ECON101",
+      "title": "Economic Principles",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T7-C1",
+      "term": "Fall 2026",
+      "course_code": "BIO340",
+      "title": "Experimental Biology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T7-C2",
+      "term": "Fall 2026",
+      "course_code": "BIO350",
+      "title": "Biochemistry",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A-",
+      "grade_points": 11.1,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T7-C3",
+      "term": "Fall 2026",
+      "course_code": "BIO360",
+      "title": "Research Methods",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B+",
+      "grade_points": 9.9,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T7-C4",
+      "term": "Fall 2026",
+      "course_code": "BIO370",
+      "title": "Conservation Biology",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "B",
+      "grade_points": 9.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T7-C5",
+      "term": "Fall 2026",
+      "course_code": "WRIT310",
+      "title": "Science Communication",
+      "credits_attempted": 3,
+      "credits_earned": 3,
+      "grade": "A",
+      "grade_points": 12.0,
+      "status": "completed"
+    },
+    {
+      "attempt_id": "MVU-001-T8-C1",
+      "term": "Spring 2027",
+      "course_code": "BIO410",
+      "title": "Senior Research Seminar",
+      "credits_attempted": 3,
+      "credits_earned": 0,
+      "grade": "IP",
+      "grade_points": 0,
+      "status": "in_progress"
+    },
+    {
+      "attempt_id": "MVU-001-T8-C2",
+      "term": "Spring 2027",
+      "course_code": "BIO420",
+      "title": "Capstone Research",
+      "credits_attempted": 3,
+      "credits_earned": 0,
+      "grade": "IP",
+      "grade_points": 0,
+      "status": "in_progress"
+    },
+    {
+      "attempt_id": "MVU-001-T8-C3",
+      "term": "Spring 2027",
+      "course_code": "BIO430",
+      "title": "Molecular Biology",
+      "credits_attempted": 3,
+      "credits_earned": 0,
+      "grade": "IP",
+      "grade_points": 0,
+      "status": "in_progress"
+    },
+    {
+      "attempt_id": "MVU-001-T8-C4",
+      "term": "Spring 2027",
+      "course_code": "ENV310",
+      "title": "Environmental Policy",
+      "credits_attempted": 3,
+      "credits_earned": 0,
+      "grade": "IP",
+      "grade_points": 0,
+      "status": "in_progress"
+    },
+    {
+      "attempt_id": "MVU-001-T8-C5",
+      "term": "Spring 2027",
+      "course_code": "PHIL310",
+      "title": "Ethics of Science",
+      "credits_attempted": 3,
+      "credits_earned": 0,
+      "grade": "IP",
+      "grade_points": 0,
+      "status": "in_progress"
+    }
+  ],
+  "computed_summary": {
+    "earned_credits": 105,
+    "in_progress_credits": 15,
+    "gpa_hours": 105,
+    "quality_points": 378.0,
+    "cumulative_gpa": "3.600"
+  },
+  "sources": [
+    {
+      "source_id": "MVU-AUD-001",
+      "version": 1,
+      "date": "2027-02-14",
+      "type": "degree_audit",
+      "student_id": "MVU-DEMO-001",
+      "text": "Scoped degree audit snapshot: Advanced laboratory requirement LAB-ADV is OPEN. Completed BIO340 is not currently applied to LAB-ADV. This snapshot does not certify satisfaction of all degree requirements."
+    },
+    {
+      "source_id": "MVU-SUB-001",
+      "version": 1,
+      "date": "2027-01-20",
+      "type": "substitution_approval",
+      "student_id": "MVU-DEMO-001",
+      "status": "approved",
+      "course_code": "BIO340",
+      "requirement_id": "LAB-ADV",
+      "text": "Approved substitution: completed BIO340 Experimental Biology may satisfy LAB-ADV for Maya Chen, student MVU-DEMO-001, under the 2023 BS Biology catalog. Approved by the fictional department authority. Registrar posting remains pending."
+    },
+    {
+      "source_id": "MVU-POL-001",
+      "version": 1,
+      "date": "2023-08-01",
+      "type": "policy",
+      "catalog_year": "2023",
+      "text": "For the fictional 2023 BS Biology catalog, individual approved course substitutions must be posted by the registrar to the student degree audit. Advisors must refer discrepancies to the registrar. Graduation certification remains a registrar responsibility."
+    },
+    {
+      "source_id": "MVU-NOTE-001",
+      "version": 1,
+      "date": "2027-02-12",
+      "type": "advising_note",
+      "student_id": "MVU-DEMO-001",
+      "text": "Student asks whether the lab warning will delay May graduation. Advisor will compare the audit with the substitution approval and request registrar reconciliation. Final term courses remain in progress."
+    }
+  ],
+  "golden_expectations": {
+    "must_identify": "Approved substitution exists but audit still marks LAB-ADV open.",
+    "action": "Ask registrar to reconcile and post the approved substitution.",
+    "required_sources": [
+      "MVU-AUD-001",
+      "MVU-SUB-001",
+      "MVU-POL-001"
+    ],
+    "must_not_claim": [
+      "Graduation is certified",
+      "In progress credits are earned",
+      "All degree requirements have been evaluated"
+    ],
+    "without_approval": "Report missing approval evidence and request it; do not infer approval from the advising note.",
+    "unauthorized_advisor": "Deny before retrieval and deny direct document/report access."
+  },
+  "scope_note": "Canonical synthetic seed with complete course attempts and a deliberately scoped audit. Expand formal degree rules before implementing a complete audit."
+}

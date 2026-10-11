@@ -1,0 +1,42 @@
+import os,json
+from pathlib import Path
+os.environ['PLAYWRIGHT_BROWSERS_PATH']=str(Path(__file__).resolve().parents[1]/'runtime/browsers')
+from playwright.sync_api import sync_playwright
+root=Path(__file__).resolve().parents[1];out=root/'artifacts/browser';out.mkdir(exist_ok=True)
+with sync_playwright() as p:
+    browser=p.chromium.launch(headless=True)
+    context=browser.new_context(viewport={'width':1440,'height':1080},record_video_dir=str(out/'recording'))
+    page=context.new_page();errors=[];external=[]
+    page.on('pageerror',lambda e:errors.append(str(e)))
+    page.on('console',lambda message:errors.append(message.text) if message.type=='error' and '403' not in message.text else None)
+    page.on('request',lambda r:external.append(r.url) if not r.url.startswith(('http://127.0.0.1:8000','data:','blob:')) else None)
+    page.goto('http://127.0.0.1:8000');page.screenshot(path=str(out/'landing.png'),full_page=True)
+    page.get_by_role('button',name='Alex Morgan').click()
+    page.get_by_role('button',name='Review the evidence').click()
+    page.get_by_role('heading',name='An approval is recorded. The audit still needs reconciliation.').wait_for(timeout=120000)
+    page.screenshot(path=str(out/'maya-result.png'),full_page=True)
+    page.get_by_role('button',name='MVU-SUB-001').click()
+    page.get_by_role('dialog').wait_for();page.locator('.pdf-viewer[data-ready="true"]').wait_for(timeout=30000);page.screenshot(path=str(out/'source-view.png'),full_page=True)
+    page.get_by_role('button',name='Close panel').click()
+    page.get_by_role('button',name='Preview brief').click();page.locator('.pdf-viewer[data-ready="true"]').wait_for(timeout=30000);assert page.locator('canvas.pdf-page').count()==2;page.screenshot(path=str(out/'brief-preview.png'))
+    with page.expect_download() as d:page.get_by_role('link',name='Download PDF').click()
+    d.value.save_as(str(out/'downloaded-brief.pdf'))
+    page.get_by_role('button',name='Close panel').click()
+    page.get_by_role('button',name='I have reviewed this brief').click()
+    page.locator('.review-label').filter(has_text='REVIEWED BY Alex Morgan').wait_for()
+    page.get_by_text('Presenter scenario controls').click()
+    page.get_by_label('Evidence scenario').select_option('approval-missing')
+    page.get_by_role('button',name='Review the evidence').click()
+    page.get_by_role('heading',name='More evidence is needed before resolving the requirement.').wait_for(timeout=120000)
+    page.screenshot(path=str(out/'missing-approval.png'),full_page=True)
+    page.get_by_label('Evidence scenario').select_option('original')
+    page.get_by_label('Demonstration identity').select_option('ADV-02')
+    page.get_by_role('button',name='Request Maya’s records').click()
+    page.get_by_role('alert').filter(has_text='not assigned').wait_for()
+    page.screenshot(path=str(out/'permission-denied.png'),full_page=True)
+    page.set_viewport_size({'width':390,'height':844});page.screenshot(path=str(out/'mobile.png'),full_page=True)
+    assert not errors,errors
+    assert not external,external
+    (out/'result.json').write_text(json.dumps({'page_errors':errors,'external_requests':external,'flow':'passed'},indent=2))
+    context.close();browser.close()
+print('Browser flow passed; screenshots, PDF, and recording saved.')

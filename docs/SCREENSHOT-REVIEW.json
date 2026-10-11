@@ -1,0 +1,8 @@
+{
+  "file": "docs/images/synthetic-preview.png",
+  "sha256": "a02e1e8252744db3395fc51098638f08d34b981af7288c22f5b2a0787761ce3e",
+  "classification": "reviewed synthetic UI",
+  "reviewed": "2026-10-10",
+  "scope": "Initial UI; no inference or operator mutations. Background lifespan disabled. Fictional/generated records only.",
+  "metadata": "Only PNG IHDR/IDAT/IEND chunks; no text or EXIF."
+}

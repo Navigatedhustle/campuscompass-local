@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=CampusCompass Local
+Comment=Synthetic university advising on HP ZGX Nano
+Exec=/bin/bash /PATH/TO/campuscompass-local/scripts/desktop-launch.sh
+Icon=applications-education
+Terminal=false
+Categories=Education;
