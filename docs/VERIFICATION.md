@@ -2,7 +2,7 @@
 
 **Result:** 22 passed; React/TypeScript production build passed.
 
-Canonical fixtures, domain calculations, claim release checks, student isolation and advisor permissions. Build borrowed existing node_modules read-only via a temporary symlink that was removed afterward.
+Canonical fixtures, domain calculations, claim release checks, student isolation and advisor permissions. Build reused existing node_modules through a temporary symlink that was removed afterward; no fresh dependency installation was performed.
 
 Checks ran on the owner's actual GB10 ARM64 Ubuntu machine, using its existing project environments. Fresh installation on another machine is not established. All selected Python source was parsed; shell syntax and JavaScript syntax checks are recorded during final publication review. The source-only copies were tested independently of live runtime locations.
 
